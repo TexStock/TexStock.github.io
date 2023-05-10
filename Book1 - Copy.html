@@ -1,0 +1,54 @@
+<html>
+    <img src="searchButton.png" style="position: absolute;left: 58vw;top: 6vw; z-index: 5; width: 3vw;height: 3vw;"onclick="window.location.href='lookup.html'">
+    <img src="MenuButton.png"onclick="openNav()" style="position: absolute;left:1vw;top: 6vw;z-index: 16;width: 3vw;height: 3vw;">
+    <img src="Logo.png" style="position: absolute; left: 0vw;top: 0vw;width: 7.5vw;height: 5vw;z-index: 16;" onclick="window.location.href='index.html'">
+    <img src="CartButton.png" style = "position: absolute;left: 90vw;top: 6vw;z-index: 16;width: 3vw;height: 3vw;" onclick="window.location.href='cart.html'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Screen.js"></script>
+    <head>
+    <link rel="stylesheet" href="styles.css">
+<script src="sidenav.js"></script>
+
+</head>
+<body>
+</body>
+<div class="topBar1" style="position: absolute;" ></div>
+
+<div class="topBar2" style="position: absolute;"> 
+</div>
+<h1 style="position: absolute;left: 10vw;top: 5vw; text-align: right;font-size: 2vw">school name</h1>  
+<input type="text" id="text-input1" name="text-input" style="width: 10vw; height: 2vw; position: absolute; left: 21vw; top: 6.5vw;" id="myInput" onclick="window.location.href='books.html'" placeholder="Search for names.."></input>
+<h1 style="position: absolute;left: 40vw;top: 5vw; text-align: right;font-size: 2vw">class</h1>  
+<input type="text" id="text-input2" name="text-input" style="width: 10vw; height: 2vw; position: absolute; left: 45vw; top: 6.5vw;" onclick="window.location.href='books.html'" placeholder="Search for Class.."></input>
+<h1 style="position: absolute;left: 65vw;top: 5vw; text-align: right;font-size: 2vw">ISBN</h1>  
+<input type="text" id="text-input3" name="text-input" style="width: 10vw; height: 2vw; position: absolute; left: 71vw; top: 6.5vw;" onclick="window.location.href='books.html'" onkeyup="myFunction3(1)" placeholder="Search for ISBN.."></input>
+
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="AboutUs.html">About</a>
+        <a href="books.html">Browse</a>
+        <a href="Schools.html">Schools/become a sponsor</a>
+        <a href="returns.html">Return</a>
+
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        ...
+      </div>
+      <div class="corner" style="position: absolute;"></div>
+    <img src="textbook1.jpg" style="width: 40vw; height: auto; position: absolute; top: 15vw;">
+    <h1 style="position: absolute;left: 50%;top: 15vw;">Buy</h1>
+    <h2 style="position: absolute;left: 50%;top: 19vw;">$13.99</h2>
+<button style="position: absolute; left: 50%; top: 25vw;" onclick="window.location.href='cart.html'">Add To Cart</button>
+    <h1 style="position: absolute;left: 60%;top: 15vw;">Sell</h1>
+    <h2 style="position: absolute;left: 60%;top: 19vw;">$10.99</h2>
+    <button style="position: absolute; left: 60%; top: 25vw;">Sell Now</button>
+
+
+
+    
+    </html>

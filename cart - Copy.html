@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="sidenav.js"></script>
+    <script>function myFunction(ind) {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("text-input1");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+      
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[ind];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }</script>
+
+<script>function myFunction2(ind) {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("text-input2");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[ind];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }</script>
+  <script>function myFunction3(ind) {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("text-input3");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[ind];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }</script>
+</head>
+<img src="searchButton.png" style="position: fixed;left: 58vw;top: 6vw; z-index: 5; width: 3vw;height: 3vw;"onclick="window.location.href='lookup.html'">
+<img src="MenuButton.png"onclick="openNav()" style="position: fixed;left:1vw;top: 6vw;z-index: 16;width: 3vw;height: 3vw;">
+<img src="CartButton.png" style = "position: fixed;left: 90vw;top: 6vw;z-index: 16;width: 3vw;height: 3vw;" onclick="window.location.href='cart.html'">
+<img src="Logo.png" style="position: fixed; left: 0vw;top: 0vw;width: 7.5vw;height: 5vw;z-index: 16;" onclick="window.location.href='index.html'">
+
+
+<body>
+<!-- <div class = "bookbox"style = "position: absolute; left: 8%; top: 10vw; width: 75%; height: 14vw;     background-color: rgba(148, 210, 140, 0.993);"><h2></h2><button>add to cart</button></div>
+<img src="textbook1.jpg" style = "position: absolute; left: 10%; top: 12vw; width: 10vw; height: 10vw;">
+<div class = "bookbox" style = "position: absolute; left: 8%; top: 30vw; width: 75%; height: 14vw;     background-color: rgba(148, 210, 140, 0.993);"></div>
+<img src="textbook1.jpg" style = "position: absolute; left: 10%; top: 32vw; width: 10vw; height: 10vw;">
+<div class = "bookbox" style = "position: absolute; left: 8%; top: 50vw; width: 75%; height: 14vw;     background-color: rgba(148, 210, 140, 0.993);"></div>
+
+<img src="textbook1.jpg" style = "position: absolute; left: 10%; top: 52vw; width: 10vw; height: 10vw;">
+<div class = "bookbox" style = "position: absolute; left: 8%; top: 70vw; width: 75%; height: 14vw;     background-color: rgba(148, 210, 140, 0.993);"></div>
+
+<img src="textbook1.jpg" style = "position: absolute; left: 10%; top: 72vw; width: 10vw; height: 10vw;">
+<div class = "bookbox" style = "position: absolute; left: 8%; top: 90vw; width: 75%; height: 14vw;     background-color: rgba(148, 210, 140, 0.993);"></div>
+
+<img src="textbook1.jpg" style = "position: absolute; left: 10%; top: 92vw; width: 10vw; height: 10vw;">
+<div class = "bookbox" style = "position: absolute; left: 8%; top: 110vw; width: 75%; height: 14vw;     background-color: rgba(148, 210, 140, 0.993);"></div>
+
+<img src="textbook1.jpg" style = "position: absolute; left: 10%; top: 112vw; width: 10vw; height: 10vw;"> -->
+<input type="text" >
+
+</body>
+<div class="topBar1" ></div>
+
+<div class="topBar2" >  
+   
+</div>
+
+    <h1 style="position: fixed;left: 10vw;top: 5vw; text-align: right;font-size: 2vw">school name</h1>  
+    <input type="text" id="text-input1" name="text-input" style="width: 10vw; height: 2vw; position: absolute; left: 21vw; top: 6.5vw;" id="myInput" onclick="window.location.href='books.html'" placeholder="Search for names.."></input>
+    <h1 style="position: fixed;left: 40vw;top: 5vw; text-align: right;font-size: 2vw">class</h1>  
+    <input type="text" id="text-input2" name="text-input" style="width: 10vw; height: 2vw; position: absolute; left: 45vw; top: 6.5vw;" onclick="window.location.href='books.html'" placeholder="Search for Class.."></input>
+    <h1 style="position: fixed;left: 65vw;top: 5vw; text-align: right;font-size: 2vw">ISBN</h1>  
+    <input type="text" id="text-input3" name="text-input" style="width: 10vw; height: 2vw; position: absolute; left: 71vw; top: 6.5vw;" onclick="window.location.href='books.html'" onkeyup="myFunction3(1)" placeholder="Search for ISBN.."></input>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="AboutUs.html">About</a>
+        <a href="books.html">Browse</a>
+        <a href="Schools.html">Schools/become a sponsor</a>
+        <a href="returns.html">Return</a>
+
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        ...
+      </div>
+<div class="corner"></div>
+
+<table id="myTable">
+    <tr class="header">
+      <th style="width:30%;">Image</th>
+      <th style="width:30%;">ISBN</th>
+      <th style="width: 20%;">Class</th>
+      <th style="width: 10%;">School</th>
+      <th style ="width: 5%;">Remove</th>
+      <th style ="width: 5%;">Buy</th>
+
+    </tr>
+    <tr>
+      <td><img src="textbook1.jpg"onclick="window.location.href='Book1.html'"></td>
+      <td>123456</td>
+      <td>cs119</td>
+      <td>Thomas</td>
+      <td>Remove</td>
+      <td>  <button >Buy Now</button>      </td>
+
+
+    </tr>
+    <tr>
+        <td><img src="Textbook2.jpg" onclick="window.location.href='Book2.html'"></td>
+        <td>123456</td>
+        <td>cs111</td>
+        <td>Husson</td>
+        <td>Remove</td>
+        <td>  <button >Buy Now</button>      </td>
+
+      </tr>
+    <tr>
+      <td><img src="textbook3.webp"onclick="window.location.href='Book3.html'"></td>
+      <td>1234567</td>
+      <td>eh229</td>
+      <td>Husson</td>
+      <td>Remove</td>
+      <td>  <button >Buy Now</button>      </td>
+
+    </tr>
+
+    
+  </table>
+  
+  <button >Buy Now</button>
+  <div style="position: absolute;left: 50%; top: 90vw; z-index: 10;"><h1 style="font-size: 0.01px;">.   </h1><h1></h1></div>
+</html>
