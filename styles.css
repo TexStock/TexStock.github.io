@@ -214,3 +214,11 @@ height: 8%;
     left: 72%; 
     top: 14%;
 }
+.footer{
+    position: absolute;
+    top: 100%;
+    z-index: 16;
+    font-size: 1vw;
+    width: 10%;
+    text-align: center;
+}

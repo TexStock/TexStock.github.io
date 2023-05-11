@@ -10,23 +10,23 @@
 </head>
 <body>
 </body>
-<div class="topBar1" style="position: absolute;" ></div>
+<div class="topBar1" style="position: fixed;" ></div>
 
-<div class="topBar2" style="position: absolute;"> 
+<div class="topBar2" style="position: fixed;"> 
 </div>
-<h1 style="position: absolute;left: 12%;top: 11.5%; text-align: right;font-size: 2vw">school name</h1>  
-<input type="text" id="text-input1" name="text-input" style="position: absolute;" id="myInput" onclick="window.location.href='books.html'" placeholder="Search for names.."></input>
-<h1 style="position: absolute;left: 42%;top: 11.5%; text-align: right;font-size: 2vw">class</h1>  
-<input type="text" id="text-input2" name="text-input" style="position: absolute;" onclick="window.location.href='books.html'" placeholder="Search for Class.."></input>
-<h1 style="position: absolute;left: 67%;top: 11.5%; text-align: right;font-size: 2vw">ISBN</h1>  
-<input type="text" id="text-input3" name="text-input" style="position: absolute;" onclick="window.location.href='books.html'" onkeyup="myFunction3(1)" placeholder="Search for ISBN.."></input>
+<h1 style="position: fixed;left: 12%;top: 11.5%; text-align: right;font-size: 2vw">school name</h1>  
+<input type="text" id="text-input1" name="text-input" style="position: fixed;" id="myInput" onclick="window.location.href='books.html'" placeholder="Search for names.."></input>
+<h1 style="position: fixed;left: 42%;top: 11.5%; text-align: right;font-size: 2vw">class</h1>  
+<input type="text" id="text-input2" name="text-input" style="position: fixed;" onclick="window.location.href='books.html'" placeholder="Search for Class.."></input>
+<h1 style="position: fixed;left: 67%;top: 11.5%; text-align: right;font-size: 2vw">ISBN</h1>  
+<input type="text" id="text-input3" name="text-input" style="position: fixed;" onclick="window.location.href='books.html'" onkeyup="myFunction3(1)" placeholder="Search for ISBN.."></input>
 
     
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="AboutUs.html">About</a>
         <a href="books.html">Browse</a>
-        <a href="Schools.html">Schools/become a sponsor</a>
+        <a href="Schools.html">Schools</a>
         <a href="returns.html">Return</a>
 
       </div>
@@ -37,15 +37,34 @@
       <div id="main">
         ...
       </div>
-      <div class="corner" style="position: absolute;"></div>
+      <div class="corner" style="position: fixed;"></div>
     <img src="textbook1.jpg" style="width: 50%; height: auto; position: absolute; top: 20%;">
-    <h1 style="position: absolute;left: 55%;top: 20%">Buy</h1>
-    <h2 style="position: absolute;left: 55%;top: 30%;">$29.99</h2>
+    <h1 style="position: absolute;left: 55%;top: 20%; z-index: 1;">Buy</h1>
+    <h2 style="position: absolute;left: 55%;top: 30%; ">$29.99</h2>
 <button style="position: absolute; left: 55%; top: 40%;" onclick="window.location.href='cart.html'">Add To Cart</button>
-    <h1 style="position: absolute;left: 75%;top: 20%;">Sell</h1>
+    <h1 style="position: absolute;left: 75%;top: 20%;z-index: 1;">Sell</h1>
     <h2 style="position: absolute;left: 75%;top: 30%;">$20.99</h2>
     <button style="position: absolute; left: 75%; top: 40%;">Sell Now</button>
 
+    <div class="footer" style="width: 110%;height: 45%;     background-color: rgba(148, 210, 140, 0.993); position: absolute; left: -1%;"></div>
+        
+    <h2 class="footer"style="position: absolute; left: 10%;">My Account</h2>
+      <h2 class="footer"style="position: absolute; left: 20%;">Track Orders</h2>
+      <h2 class="footer"style="position: absolute; left: 30%;">Bulk Buying</h2>
+      <h2 class="footer"style="position: absolute; left: 40%;">Student Software Discounts</h2>
+      <h2 class="footer"style="position: absolute; left: 50%;">Offers</h2>
+      <h2 class="footer"style="position: absolute; left: 60%;">Affiliates</h2>
+      <h2 class="footer"style="position: absolute; left: 70%;">About Us</h2>
+      <h2 class="footer"style="position: absolute; left: 80%;">Careers</h2>
+      <h2 class="footer"style="position: absolute; left: 90%;">Help/FAQs</h2>
+
+      <h2 class="footer"style="position: absolute; left: 30%;top:110%; width: 30%">Hello there enter your email to get the latest news on the cheapest textbooks</h2>
+      <input type="text" style="position: absolute; left: 40%;top: 120%; z-index: 100;"onclick="window.location.href='books.html'" placeholder="enter email.." ></input>
+      <h2 class="footer"style="position: absolute; left: 30%;top:125%; width: 30%">2023-2023 TexStock.com all rights reserved</h2>
+      <h2 class="footer"style="position: absolute; left: 30%;top:128%; width: 30%">Do not sell my personal information</h2>
+      <h2 class="footer"style="position: absolute; left: 30%;top:132%; width: 10%">Private Policy</h2>
+      <h2 class="footer"style="position: absolute; left: 40%;top:132%; width: 10%">Terms of Service</h2>
+      <h2 class="footer"style="position: absolute; left: 50%;top:132%; width: 10%">CA Private Policy</h2>
 
 
     
